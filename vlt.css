@@ -22,10 +22,25 @@ h1 {
 }
 
 #content {
+	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+  	align-items: center;
 	text-align: center;
-	padding: 20% 20%;
 	text-shadow: 0px 0px 25px black;
 	color: white;
+	height: 600px;  	
+}
+
+#perks {
+	display: flex;
+  	justify-content: center;
+/*  	flex-direction: column;*/
+  	align-items: center;
+	text-align: center;
+	color: white;
+	height: 300px;
+	background: #1e1e1e;
 }
 
 /*DEPARTMENT STYLES*/
@@ -92,8 +107,8 @@ h1 {
 {	margin-bottom: 0px;
 	border-color: transparent;
 }
+
 .header-bg {
-	height: 20%;
 	background: url(assets/bg-warrens.jpg) no-repeat;
 	background-size: auto 100%;
 }
@@ -107,18 +122,30 @@ h1 {
 }
 
 .depts {
-	display: block;
 	text-align: center;
-	height: 100%;
-	/*padding: 20%;*/
-	vertical-align: middle;
+	height: 200px;
 	color: white;
-	
+  	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
 }
 
 .depts > strong {
 	text-transform: uppercase;
 	font-size: 150%;
+}
+
+#perks strong {
+	font-size: 125%;
+}
+
+#perks i {
+	line-height: 1.5;
+	color: #cd0000;
+}
+
+#perks > div {
+	margin: 50px;
 }
 
 .depts > hr {
