@@ -1,7 +1,4 @@
 body {
-/*	background: url(assets/Warrens-bday.jpg);
-	background-size: cover;
-	background-position: center;*/
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,6 +14,13 @@ h1 {
 	font-weight: 700;
 }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
 #content {
 	text-align: center;
 	padding: 20% 20%;
@@ -27,34 +31,18 @@ h1 {
 /*DEPARTMENT STYLES*/
 
 #deptServicing {   
-	background: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ),
-
-	url(assets/servicing.jpg);
+	background: url('assets/bg-servicing.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
 #deptContent {
-	background: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ),
-    
-	url(assets/content.jpg);
-	background-size: cover;
+	background: url('assets/bg-content.jpg');
 	background-position: center;
 }
 
 #deptDesign {
-	background: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ),
-    
-	url(assets/design.jpg);
+	background: url('assets/bg-design.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -93,49 +81,39 @@ h1 {
 }
 
 #deptStrategy {
-	background: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ),
-    
-	url(assets/strategy.jpg);
+	background: url('assets/bg-strategy.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
 /*MISC STYLES*/
 
-.navbar {
-	margin-bottom: 0px;
+.navbar 
+{	margin-bottom: 0px;
 	border-color: transparent;
 }
 .header-bg {
-	background: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ),
-    
-	url(assets/warrens-bday.jpg);
-	background-size: cover;
-	background-position: center;
+	height: 20%;
+	background: url(assets/bg-warrens.jpg) no-repeat;
+	background-size: auto 100%;
 }
 
+#mainContent > .depts {
+	/*transition: background 3s;*/
+}
 
-#depts-container div:hover {
-	transition: all 2s ease;
-
-	background: linear-gradient(
-      rgba(200, 2, 2, 0.45), 
-      rgba(200, 2, 2, 0.45)
-    );	
+#mainContent > .depts:hover {
+	background: rgb(170, 2, 2);
 }
 
 .depts {
+	display: block;
 	text-align: center;
-	padding: 50px;
+	height: 100%;
+	/*padding: 20%;*/
 	vertical-align: middle;
 	color: white;
-	height: 200px;
+	
 }
 
 .depts > strong {
