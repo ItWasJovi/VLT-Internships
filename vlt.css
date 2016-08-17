@@ -32,15 +32,46 @@ h1 {
 	height: 600px;  	
 }
 
+/*TESTIMONIALS STYLES*/
+
+#testimonials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 400px;
+	color: #FFFFFF;
+	/*background-color: #aa0202;*/	
+}
+
+.bg-testimonial{
+	background: url('assets/bg-testimonials.jpg');
+	background-attachment: fixed;
+    background-position: center 500px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    /*padding-top: 50%;*/
+}
+
+/*PERKS STYLES*/
+
 #perks {
 	display: flex;
   	justify-content: center;
 /*  	flex-direction: column;*/
   	align-items: center;
 	text-align: center;
-	color: white;
+	color: #777777;
 	height: 300px;
-	background: #1e1e1e;
+}
+
+#perks strong {
+	font-size: 125%;
+	line-height: 4;
+}
+
+#perks > div {
+	margin: 50px;
 }
 
 /*DEPARTMENT STYLES*/
@@ -58,17 +89,6 @@ h1 {
 
 #deptDesign {
 	background: url('assets/bg-design.jpg');
-	background-size: cover;
-	background-position: center;
-}
-
-#deptDev {
-	background: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ),
-    
-	url(assets/dev.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -133,19 +153,6 @@ h1 {
 .depts > strong {
 	text-transform: uppercase;
 	font-size: 150%;
-}
-
-#perks strong {
-	font-size: 125%;
-}
-
-#perks i {
-	line-height: 1.5;
-	color: #cd0000;
-}
-
-#perks > div {
-	margin: 50px;
 }
 
 .depts > hr {
