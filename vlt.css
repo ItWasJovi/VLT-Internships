@@ -12,6 +12,7 @@ hr {
 
 h1 {
 	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .row-eq-height {
@@ -35,11 +36,11 @@ h1 {
 /*TESTIMONIALS STYLES*/
 
 #testimonials {
-	display: flex;
+	/*display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	height: 400px;
+	height: 400px;*/
 	color: #FFFFFF;
 	/*background-color: #aa0202;*/	
 }
@@ -51,6 +52,32 @@ h1 {
     background-repeat: no-repeat;
     background-size: 100% auto;
     /*padding-top: 50%;*/
+}
+
+.testLeft {
+	float: right;
+}
+
+.img-circle {
+	border-radius: 50%;
+	margin: 20px;
+	box-shadow: 0 0 15px 0px gray;
+}
+
+.quote {
+	font-style: italic;
+	font-size: 125%;
+	text-align: left;
+}
+
+.name {
+	font-style: italic;
+	font-weight: 700;
+
+}
+
+.testRight {
+	float: left;
 }
 
 /*PERKS STYLES*/
@@ -94,23 +121,13 @@ h1 {
 }
 
 #deptFinance {
-	background: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ),
-    
-	url(assets/dev.jpg);
+	background: url('assets/bg-finance.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
 #deptPCO {
-	background: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ),
-    
-	url(assets/dev.jpg);
+	background: url('assets/bg-pco.jpg');
 	background-size: cover;
 	background-position: center;
 }
