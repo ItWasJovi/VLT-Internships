@@ -54,38 +54,73 @@ h1 {
     /*padding-top: 50%;*/
 }
 
-.testLeft {
-	float: right;
-}
-
-.testV {
-	padding-top: 40px;
+.divider {
+	border: 0;
+    height: 2px;
+    width: 1000px;
+    background-image: linear-gradient(to right, rgba(119, 119, 119, 0), rgba(119, 119, 119, 0.75), rgba(119, 119, 119, 0));
 }
 
 .img-circle {
 	border-radius: 50%;
-	margin: 20px;
+	margin: 40px 0 20px 0;
 	box-shadow: 0 0 15px 0px gray;
 	/*display: block;*/
-	max-height: 90px;	
+	height: 200px;	
+}
+
+.inactiveIMG {
+	border-radius: 50%;
+	/*margin: 40px 0 20px 0;*/
+	/*display: block;*/
+	max-height: 100px;	
+	margin: 10px;
+	filter: grayscale(50%);
+}
+
+.hoverIMG {
+	border-radius: 50%;
+	max-height: 100px;	
+	margin: 10px;
+	box-shadow: 0 0 15px 0px gray;
 }
 
 .quote {
 	font-style: italic;
 	font-size: 125%;
-	text-align: left;
+	max-width: 700px;
 }
 
 .name {
 	font-style: italic;
 	font-weight: 700;
-	text-align: right;
+	margin: 0;
+}
+
+.inDept {
+	font-size: 85%;
+	font-style: italic;
+}
+
+.sName {
+	font-size: 85%;
+	font-weight: 700;
+	margin: 0;
+}
+
+.sDept {
+	font-size: 85%;
 
 }
 
-.testRight {
-	float: left;
+.testimonial-content {
+	display: none;
 }
+
+.active-testimonial {
+	display: block;
+}
+
 
 /*PERKS STYLES*/
 
@@ -104,8 +139,8 @@ h1 {
 }
 
 .perk {
-	margin-top: 20px;
-	padding: 0 25px;
+	margin: 40px 0;
+	padding: 0 50px;
 	text-align: center;
 }
 
