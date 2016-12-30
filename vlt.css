@@ -12,7 +12,14 @@ hr {
 
 h1 {
 	font-weight: 700;
+	font-size: 175%;
 	text-transform: uppercase;
+	margin: 20px;
+}
+
+h3 {
+	font-size: 130%;
+	margin: 25px 50px;
 }
 
 .row-eq-height {
@@ -20,6 +27,10 @@ h1 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+}
+
+.btn-danger {
+	background-color: #cd0000;
 }
 
 #content {
@@ -48,9 +59,9 @@ h1 {
 .bg-testimonial{
 	background: url('assets/bg-testimonials.jpg');
 	background-attachment: fixed;
-    background-position: center 500px;
+    background-position: center 200px;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     /*padding-top: 50%;*/
 }
 
@@ -113,7 +124,7 @@ h1 {
 
 }
 
-.testimonial-content {
+.testimonial {
 	display: none;
 }
 
@@ -181,6 +192,12 @@ h1 {
 	background-position: center;
 }
 
+.deptsTitle {
+	text-align: center;
+	background-color: #222222;
+	color: #FFF;
+}
+
 /*MISC STYLES*/
 
 .navbar 
@@ -190,7 +207,8 @@ h1 {
 
 .header-bg {
 	background: url(assets/bg-warrens.jpg) no-repeat;
-	background-size: auto 100%;
+	background-position: 0 -250px;
+	/*background-size: auto 100%;*/
 }
 
 #mainContent > .depts {
@@ -199,6 +217,10 @@ h1 {
 
 #mainContent > .depts:hover {
 	background: rgb(170, 2, 2);
+}
+
+#mainContent {
+	cursor: pointer;
 }
 
 .depts {

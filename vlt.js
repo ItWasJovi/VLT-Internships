@@ -8,24 +8,34 @@ $('.inactiveIMG').hover(function() {
 
 $('#laura-pp').on('click', function(event) {
 	event.preventDefault();
-	$('.testimonial-content').removeClass('active-testimonial');
-	$('#laura-chien').addClass('active-testimonial');
+	var lc = $('#laura-chien').html();
+	$('#current-testimonial').html('');
 });
 
 $('#jamesl-pp').on('click', function(event) {
 	event.preventDefault();
-	$('.testimonial-content').removeClass('active-testimonial');
-	$('#james-lee').addClass('active-testimonial');
+	var jl = $('#james-lee').html();
+	$('#current-testimonial').fadeOut('fast', function() {
+		$('#current-testimonial').fadeIn('fast').html(jl);
+	});
 });
 
 $('#shenning-pp').on('click', function(event) {
 	event.preventDefault();
-	$('.testimonial-content').removeClass('active-testimonial');
-	$('#shenning-loo').addClass('active-testimonial');
+	var sl = $('#shenning-loo').html();
+	$('#current-testimonial').html();
+	$('#current-testimonial').html(sl);	
 });
 
 $('#jameso-pp').on('click', function(event) {
 	event.preventDefault();
-	$('.testimonial-content').removeClass('active-testimonial');
-	$('#james-ooi').addClass('active-testimonial');
+	var jo = $('#james-ooi').html();
+	$('#current-testimonial').fadeOut('fast', function() {
+		$('#current-testimonial').fadeIn('fast').html(jo);
+	});
 });
+
+// Testimonial Rotator
+
+var testimonials = $('.testimonial');
+
